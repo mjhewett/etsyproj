@@ -1,0 +1,223 @@
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+
+
+
+// text colors!
+	// header
+$pageColor: #F5F5F1; //page color
+$logoColor: #FF3800; //etsy logo color
+$searchColor: #36A9C4; //search bar color
+$blueTextColor: #0094B8; //all blue text color
+$blackTextColor: #555555; //all black text color
+
+// fonts
+$mainFont: Arial,sans-serif;
+
+// search filter
+
+// colors
+
+$filterColorRed: #FF0002;
+$filterColorOrange: #FF7100;
+$filterColorYellow: #F6D000;
+$filterColorGreen: #00CF08;
+$filterColorBlue: #00D0F7;
+$filterColorPurple: #BC00F5;
+$filterColorBlack: #000000;
+$filterColorWhite: #FFFFFF;
+
+
+
+
+
+
+
+
+body{
+	background: $pageColor;
+}
+
+// HEADER STUFF
+
+header{
+	height: 82px;
+	background: white;
+	clear: both;
+}
+
+.etsimg{
+	float: left;
+	height: 50px;
+	margin-left: 231px;
+	margin-top: 15px;
+}
+
+
+.headLeft{
+	float: left;
+	margin-bottom: 15px;
+}
+
+.headLeftRight {
+  float: left;
+  margin-left: 330px;
+  margin-top: -35px;
+}
+
+input{
+	border: solid 1px black;
+	border-radius: 4px;
+	height: 31px;
+	padding-right: 81px;
+}
+
+button{
+	margin-left: -4px;
+	height: 31px;
+	font: $mainFont;
+	text-align: center;
+
+
+}
+
+
+.imgetsy {
+	margin-top: 10px;
+}
+
+.headRight{
+	float: right;
+	margin-right: 242px;
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.reg{
+	font-family: $mainFont;
+	color: $blueTextColor;
+}
+
+.signIn{
+	font-family: $mainFont;
+	color: $blueTextColor;
+}
+
+.regRight{
+	float:right;
+	margin-left: 30px;
+}
+
+.cartDiv{
+	display: inline-block;
+}
+
+.cartCart{
+display: inline-block;
+}
+
+.cart{
+	height: 20px;
+}
+
+
+
+// END OF HEADER STUFF
+
+// ASIDE STUFF
+
+.grr {
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  margin-left: 190px;
+  margin-top: 18px;
+  margin-bottom: -10px;
+}
+
+.smallbox{
+	width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+aside{
+
+width: 25%;
+float: left;
+  margin-left: 190px;
+    margin-top: -55px;
+}
+
+h5{
+	margin-bottom: -5px;
+	margin-left: 15px;
+	margin-top: 15px;
+	font-family: $mainFont;
+}
+
+.showRes{
+
+}
+
+.topaside{
+	width: 246px;
+	height: 409px;
+	border: 1px solid #E1E4DF;
+	border-radius: 4px;
+	margin-top: 58px;
+}
+
+.list1{
+	list-style-type: none;
+}
+
+li{
+  list-style-type: none;
+  padding-bottom: 9px;
+  margin-left: -15px;
+  color: #0094B8;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+
+
+
+.bottomAside{
+	width: 246px;
+	height: 656px;
+	border: 1px solid #E1E4DF;
+	border-radius: 4px;
+}
+
+
+
+// section
+
+ section {
+   width: 75%;
+   @include span-columns(9);
+   height: 100%;
+   float: right;
+   display: block;
+   .imgCard {
+    @include span-columns(3);
+    @include omega(3n);
+    height: 200px;
+    width: 225px;
+    background-color: red;
+    margin-bottom: 15px;
+   }
+}
+
+
+section:last-child {
+  margin-right: -200px;
+}
+
+
+
+
