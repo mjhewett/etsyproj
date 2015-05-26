@@ -27,7 +27,7 @@ $filterColorPurple: #BC00F5;
 $filterColorBlack: #000000;
 $filterColorWhite: #FFFFFF;
 
-
+$borderColor: #E0E5DF;
 
 
 
@@ -50,7 +50,7 @@ header{
 	float: left;
 	height: 50px;
 	margin-left: 231px;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 
@@ -62,25 +62,50 @@ header{
 .headLeftRight {
   float: left;
   margin-left: 330px;
-  margin-top: -35px;
+  margin-top: -42px;
 }
 
-input{
-	border: solid 1px black;
-	border-radius: 4px;
-	height: 31px;
-	padding-right: 81px;
+.searchinp{
+	border: solid 1px #D0CBC8;
+	border-radius-left: 4px;
+	height: 35px;
+	width: 253px;
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
 }
 
 button{
 	margin-left: -4px;
-	height: 31px;
+	height: 35px;
+	width: 80px;
 	font: $mainFont;
 	text-align: center;
-
-
+	background-color: #00ABC7;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	color: white;
+	font-weight: bold;
+	decoration: none;
 }
 
+button:hover{
+	background-color: #00B3CC;
+	opacity: 0.1;
+}
+
+.bro{
+	text-decoration: none;
+}
+
+.browse{
+	padding: 7px;
+	border: 1px solid $borderColor;
+	border-radius: 4px;
+}
+
+.browse:hover{
+	border: 1px solid black;
+}
 
 .imgetsy {
 	margin-top: 10px;
@@ -96,30 +121,46 @@ button{
 .reg{
 	font-family: $mainFont;
 	color: $blueTextColor;
+	  margin-right: 15px;
+	  position: relative;
+}
+
+.reg:hover{
+	text-decoration: underline;
 }
 
 .signIn{
 	font-family: $mainFont;
 	color: $blueTextColor;
+  	margin-left: 0px;
+  	margin-right: 60px;
+  	padding: 10px;
+    border: 1px solid #0094B8;
+    border-radius: 4px;
+}
+
+.signIn:hover{
+	background-color: #EEFCFE;
 }
 
 .regRight{
 	float:right;
 	margin-left: 30px;
-}
-
-.cartDiv{
-	display: inline-block;
+	margin-top: 10px;
 }
 
 .cartCart{
-display: inline-block;
+	float: right;
+	margin-right: 20px;
 }
 
 .cart{
-	height: 20px;
+  height: 20px;
+  float: right;
+  margin-top: -28px;
+  margin-right: -22px;
+  border-left: 1px solid #eeeeee;
 }
-
 
 
 // END OF HEADER STUFF
@@ -167,7 +208,8 @@ h5{
 	border: 1px solid #E1E4DF;
 	border-radius: 4px;
 	margin-top: 58px;
-}
+	background:white;
+}	
 
 .list1{
 	list-style-type: none;
@@ -183,19 +225,275 @@ li{
 }
 
 
+li:hover{
+text-decoration: underline;
+}
 
 
+.refyo {
+  font-size: 13.5px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+// end topaside!
+
+// bottom aside!
 
 .bottomAside{
 	width: 246px;
 	height: 656px;
 	border: 1px solid #E1E4DF;
 	border-radius: 4px;
+	background: white;
+}
+
+// item types
+
+h6 {
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
 
+.radios{
+	display: inline-block;
+	margin-left: 12px;
+	margin-right: 12px;
+}
 
-// section
+.radios {
+width: 220px;
+  border-bottom: 1px solid #E0E5DF;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: -30px;
+}
+.listTwo{
+	line-height: 4px;
+}
+
+
+// item prices
+
+
+.low {
+  width: 75px;
+  height: 40px;
+  border-radius: 4px;
+  border-style: none;
+  border: 1px solid #D9D9D9;
+}
+
+.tooo{
+	font-size: 12px;
+}
+
+.high{
+ width: 75px;
+  height: 40px;
+  margin-left: 2px;
+  border-radius: 4px;
+  border-style: none;
+  border: 1px solid #D9D9D9;
+}
+
+.titlePrice{
+	text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.triBox {
+  width: 39px;
+  height: 40px;
+  border: 1px solid #D9D9D9;
+  display: inline-block;
+  margin-bottom: -14px;
+  border-radius: 4px;
+  content: '▾';
+}
+
+
+.price{
+	padding-bottom: 20px;
+	margin-left: 12px;
+	margin-right: 12px;
+	border-bottom: solid 1px #E0E5DF;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+// color filter
+
+.culluhFilt{
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+}
+
+.colluh{
+	display: inline-block;
+	height: 21px;
+	width: 21px;
+	border: 1px solid #E1E4DF;
+}
+
+.one{
+	background-color: $filterColorRed;
+}
+
+.two{
+	background-color: $filterColorOrange;
+}
+
+.three{
+	background-color: $filterColorYellow;
+}
+
+.four{
+	background-color: $filterColorGreen;
+}
+
+.five{
+	background-color: $filterColorBlue;
+}
+
+.six{
+	background-color: $filterColorPurple;
+}
+
+.seven{
+	background-color:$filterColorBlack;
+}
+
+.eight{
+	background-color:$filterColorWhite;
+}
+
+.culluh{
+  padding-bottom: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-bottom: solid 1px $borderColor;
+}
+
+
+// ordering info
+
+.order{
+	margin-left: 12px;
+	border-bottom: 1px solid $borderColor;
+	margin-right: 12px;
+	padding-bottom: 5px;
+}
+
+.ordering{
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.accept{
+	margin-left: 5px;
+	font-size: 12px;
+	color: #0094B8;
+	font-weight: normal;
+}
+
+.accept:hover{
+	text-decoration: underline;
+}
+
+.custom{
+	margin-left: 5px;
+	font-size: 12px;
+	color: #0094B8;
+	font-weight: normal;
+}
+
+.custom:hover{
+	text-decoration: underline;
+}
+
+
+// shop location
+
+.location{
+	margin-left: 12px;
+	margin-right: 12px;
+	border-bottom: 1px solid $borderColor;
+    padding-bottom: 15px;
+}
+
+.shopLoc{
+font-size: 13px;
+  font-family: $mainFont;
+  margin-bottom: 5px;
+}
+
+.anywhere{
+	font-size: 12px;
+	font-family: $mainFont;
+	color: $blueTextColor;
+	font-weight: normal;
+}
+
+.anywhere:hover{
+	text-decoration: underline;
+}
+
+.usa{
+	font-size: 12px;
+	font-family: $mainFont;
+	color: $blueTextColor;
+	font-weight: normal;
+}
+
+.usa:hover{
+	text-decoration: underline;
+}
+
+.custloc{
+	font-size: 12px;
+	font-family: $mainFont;
+	color: $blueTextColor;
+	font-weight: normal;
+}
+
+.custloc:hover{
+	text-decoration: underline;
+}
+
+// last aside section
+
+.ship{
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+select{
+  -webkit-appearance: none;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 12px;
+  width: 219px;
+  height: 29px;
+  padding-left: 10px;
+  font-family: $mainFont;
+  font-weight: normal;
+}	
+
+
+
+
+// section start
 
  section {
    width: 75%;
@@ -208,7 +506,7 @@ li{
     @include omega(3n);
     height: 200px;
     width: 225px;
-    background-color: red;
+    // background-color: red;
     margin-bottom: 15px;
    }
 }
@@ -217,6 +515,10 @@ li{
 section:last-child {
   margin-right: -200px;
 }
+
+
+// javascript classes
+
 
 
 

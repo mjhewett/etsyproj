@@ -18,10 +18,12 @@
 		</div>
 		<div class="headLeftRight">
 			<span class="headHead">  
-			<input type="text" placeholder="Search for items or shops"/>
+			<input class="searchinp" type="text" placeholder="Search for items or shops"/>
 			</span>
 			<button>Search</button>
+			<a class="bro" href="">
 			<span class="browse">Browse</span>
+			</a>
 		</div>
 
 	</div> <!--headleft-->
@@ -34,7 +36,9 @@
     </div>
 	<div class="cartDiv">
   		<span class="cartCart">Cart</span>
+  		<div class="cartpic">
   		<img class="cart" src="images/cart.png">
+  		</div>
 	</div>
 </div> <!--headright-->
 </header>
@@ -48,41 +52,124 @@
 	<div class="topaside">
 	  <h5>All Categories</h5>
 		<ul class="list1">
-			<li>Home &amp; Living</li>
-			<li>Art &amp; Collectibles</li>
-			<li>Weddings</li>
-			<li>Clothing</li>
-			<li>Jewelry</li>
-			<li>Paper &amp; Party Supplies</li>
-			<li>Accessories</li>
-			<li>Craft Supplies &amp; Tools</li>
-			<li>Bags &amp; Purses</li>
-			<li>Bath &amp; Beauty</li>
-			<li>Shoes</li>
-			<li>Books, Movies, &amp; Music</li>
-			<li>Electronics &amp; Accessories</li>
-			<li>Toys &amp; Games</li>
-			<li>Pet Supplies</li>
+			<li class="listOne">Home &amp; Living</li>
+			<li class="listOne">Art &amp; Collectibles</li>
+			<li class="listOne">Weddings</li>
+			<li class="listOne">Clothing</li>
+			<li class="listOne">Jewelry</li>
+			<li class="listOne">Paper &amp; Party Supplies</li>
+			<li class="listOne">Accessories</li>
+			<li class="listOne">Craft Supplies &amp; Tools</li>
+			<li class="listOne">Bags &amp; Purses</li>
+			<li class="listOne">Bath &amp; Beauty</li>
+			<li class="listOne">Shoes</li>
+			<li class="listOne">Books, Movies, &amp; Music</li>
+			<li class="listOne">Electronics &amp; Accessories</li>
+			<li class="listOne">Toys &amp; Games</li>
+			<li class="listOne">Pet Supplies</li>
 		</ul>
 	
 
 	</div> <!--topaside-->
 
 
- <label>Refine your search:</label>
+ <h4 class="refyo">Refine your search:</h4>
 
 	<div class="bottomAside">
 
+		<h6 class="itType">Item Type</h6>
 
 
+	<div class="radios">
+	  <ul class="list2">
+		<li class="listTwo"><input type="radio"> <span> All Items</span></li>
+		<li class="listTwo"><input type="radio"> <span>Handmade</span></li>
+		<li class="listTwo"><input type="radio"> <span>Vintage</span></li>
+	  </ul>
+	</div>
+  <br>
+<div class="price">
+		<h4 class="titlePrice">Price</h4>
+		<input class="low" type="text" placeholder="$ Low"/>
+		<span class="tooo">to</span>
+		<input class="high" type="text" placeholder="$ High">
+	<div class="triBox"></div>
+</div> <!-- price boxes -->
+
+<div class="culluh">
+	<h4 class="culluhFilt">Filter by Color</h4>
+	  <a class="colour1"  href=""><div class="colluh one"></div></a>
+	  <a class="colour2"  href=""><div class="colluh two"></div></a>
+	  <a class="colour3"  href=""><div class="colluh three"></div></a>
+	  <a class="colour4"  href=""><div class="colluh four"></div></a>
+	  <a class="colour5"  href=""><div class="colluh five"></div></a>
+	  <a class="colour6"  href=""><div class="colluh six"></div></a>
+	  <a class="colour7"  href=""><div class="colluh seven"></div></a>
+	  <a class="colour8"  href=""><div class="colluh eight"></div></a>
+</div>
+
+<div class="order">
+	<h4 class="ordering">Ordering Options</h4> 
+		<input class="checkOne" type="checkbox">
+			<span class="accept">Accepts Etsy Gift Cards</span>
+			<br>
+			<input class="checkTwo" type="checkbox">
+		<span class="custom">Customizable</span>
+</div>
+
+<div class="location">
+	<h4 class="shopLoc">Shop Location</h4>
+		<input type="radio">
+		<span class="anywhere">Anywhere</span>
+		<br>
+		<input type="radio">
+		<span class="usa">United States</span>
+		<br>
+		<span class="custloc">Choose a Custom Location</span>
+</div>
+
+<div class="shippyDip">
+	<h4 class="ship">Ship To</h4>
+	<select>
+		<option>Zanzibar</option>
+		<option>Narnia</option>
+		<option>Zaire</option>
+		<option>Czechoslovakia</option>
+		<option>Chetbakerland</option>
+		<option>Yugoslavia</option>
+		<option>Westeros</option>
+		<option>Tatooine</option>
+		<option>LV-426</option>
+		<option>Rapture</option>
+		<option>Kepler-438b</option>
+		<option>The Crib</option>
+		<option>Transjordan</option>
+	</select>
+</div>
+
+
+
+
+
+
+
+</div> <!-- bottomAside -->
 
 	
 
-	</div> <!-- bottomAside -->
 
 </aside>
 <section>
 
+
+<!--  <article>
+      <ul>
+        <li class="allCat"><a href="$">All categories</a><h5 class="criteria"> ></h5></li>
+        <li class="sortBy">Sort by:<a href="#">Relevancy<span class="down">&#9660;</span></a></li>
+      </ul>
+      <ul class="listing">
+      </ul>
+</article> -->
 
 	<div class="imgCard"></div>
 	<div class="imgCard"></div>
@@ -107,6 +194,7 @@
  </div> <!--smallBox -->
 </div>  <!--container -->
   <script src="scripts/vendor/jquery.min.js"></script>
+  <script src="scripts/items.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
