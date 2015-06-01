@@ -11,11 +11,9 @@ javItems.results.forEach( function(item){
     whiskPrice ='<p class="price">' + '$' + item.price + ' ' + 'USD' + '</p>';
     whiskPost = '<li>' + whiskImage + whiskFavorite + whiskTitle + whiskSeller + whiskPrice + '</li>';
 
-    $('.imgCard').append(whiskPost);              
+    $('.imgCard').append(whiskPost);  
+
 });
-
-
-
 
 
 

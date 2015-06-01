@@ -103,7 +103,7 @@ button:hover {
 
 .cartCart {
   float: right;
-  margin-right: 20px; }
+  margin-right: 5px; }
 
 .cart {
   height: 20px;
@@ -122,14 +122,14 @@ button:hover {
 
 .smallbox {
   width: 100%;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 0 auto; }
 
 aside {
   width: 25%;
   float: left;
-  margin-left: 190px;
-  margin-top: -55px; }
+  margin-left: 188px;
+  margin-top: -42px;
+  margin-right: -186px; }
 
 h5 {
   margin-bottom: -5px;
@@ -354,40 +354,40 @@ select {
   margin-left: 12px;
   width: 219px;
   height: 29px;
-  padding-left: 10px;
+  padding-left: 65px;
   font-family: Arial, sans-serif;
   font-weight: normal; }
 
-section {
-  width: 75%;
+.section {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 74.41059%;
-  height: 100%;
   float: right;
-  display: block; }
+  display: block;
+  padding-left: 140px; }
 
-section:last-child {
+.section:last-child {
   margin-right: 0; }
 
-section .imgCard {
+.section .imgCard {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
   height: 200px;
   width: 225px;
+  border: 1px solid gray;
   margin-bottom: 15px; }
 
-section .imgCard:last-child {
+.section .imgCard:last-child {
   margin-right: 0; }
 
-section .imgCard:nth-child(3n) {
+.section .imgCard:nth-child(3n) {
   margin-right: 0; }
 
-section .imgCard:nth-child(3n+1) {
+.section .imgCard:nth-child(3n+1) {
   clear: left; }
 
 section:last-child {
-  margin-right: -200px; }
+  margin-right: 0px; }
