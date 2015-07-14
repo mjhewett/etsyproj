@@ -205,13 +205,13 @@ h5{
 	border-radius: 4px;
 	margin-top: 58px;
 	background:white;
-}	
+}
 
 .list1{
 	list-style-type: none;
 }
 
-li{
+.listOne{
   list-style-type: none;
   padding-bottom: 9px;
   margin-left: -15px;
@@ -484,7 +484,7 @@ select{
   padding-left: 65px;
   font-family: $mainFont;
   font-weight: normal;
-}	
+}
 
 
 
@@ -494,20 +494,68 @@ select{
  .section {
    // width: 75%;
    @include span-columns(9);
-   // height: 100%;
-   float: right;
-   display: block;
+   // @include omega(4n);
+   height: 100%;
+   // float: right;
+   // display: inline-block;
    padding-left: 140px;
-   .imgCard {
+
+   .imgList {
     @include span-columns(3);
-    @include omega(3n);
-    height: 200px;
-    width: 225px;
-    border: 1px solid gray;
+    // @include omega(4n);
+    height: 250px;
+    width: 250px;
     // background-color: red;
     margin-bottom: 15px;
+    list-style: none;
+    position: relative;
+    border: 1px solid #7F989C;
+    overflow: hidden;
    }
 }
+
+.title{
+  font-size: 10px;
+  line-height: 1em;
+
+}
+
+.prices{
+  font-size: 9px;
+  line-height: 0.75em;
+}
+
+.picZo{
+  height: 180px;
+  width: 248px;
+}
+
+
+.burger{
+  position: absolute;
+  margin-left: 213px;
+  margin-top: -177px;
+}
+
+
+.hearts{
+  position: absolute;
+  margin-top: -177px;
+  margin-left: 178px;
+}
+
+.seller{
+  font-size: 10px;
+  line-height: 0.75em;
+}
+
+.prices{
+  position: absolute;
+  margin-left: 178px;
+  margin-top: -20px;
+  font-size: 9px;
+}
+
 
 
 section:last-child {
@@ -515,7 +563,6 @@ section:last-child {
 }
 
 
-// javascript classes
 
 
 
